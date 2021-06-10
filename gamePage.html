@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "description" content ="Conway's Game of Life">
+    <meta name = "author" content = "Brendan Baron">
+    <meta name = "keywords" content = "HTML, CSS, Javascript, Conway, Game, Of, Life">
+    <link rel ="stylesheet" , href="styles.css">
+</head>
+
+<body style = "background-color: rgb(58, 57, 57)", id = "body">
+    <div id = "top-area">
+        <h1>Conway's Game Of Life</h1>
+        <h2>Brendan Baron</h2>
+        <button id = "playbtn" style = "background-color: rgb(58, 57, 57)" onclick = "playStopClick()">
+            <img class = "a" src = "assets/pauseplay.png" alt = "Play/Pause Button">
+        </button>
+        <button style = "background-color: rgb(58, 57, 57)" onclick  = "reset()">
+            <img class = "b" src = "assets/reset.png" alt = "Reset Button">
+        </button>
+        <button style = "background-color: rgb(58, 57, 57)" onclick = "randomGrid(26,78)">
+            <img class = "c" src =  "assets/random.png" alt = "Ranomise Board">
+        </button>
+    </div>
+    <div id="world"></div>
+    <script src = "gameOfLife.js"></script>
+</body>
+</html>
